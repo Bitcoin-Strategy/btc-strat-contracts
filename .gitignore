@@ -1,0 +1,44 @@
+node_modules
+.env
+
+# Hardhat files
+/cache
+/artifacts
+
+# TypeChain files
+/typechain
+/typechain-types
+
+# solidity-coverage files
+/coverage
+/coverage.json
+
+# IDE files
+.idea
+
+.npmrc
+
+# Docgen
+docgen
+
+.vscode/settings.json
+.yarn/install-state.gz
+
+# Upgrade storage-layout references for throwaway networks
+/upgrades/localhost.json
+/upgrades/hardhat.json
+
+# Deployment files of throwaway networks. A real network's address book and its constructor-args
+# ledger (`<name>.args.json`, what `scripts/verify.ts` reads) are committed.
+/deployments/localhost*.json
+/deployments/fork-*.json
+/deployments/hardhat*.json
+# Per-run state of the live simulation and the QA acceptance check
+/deployments/*.sim.json
+/deployments/*.checks.json
+# What `scripts/rehearse.ts` writes on the in-process network
+/deployments/rehearsal*.json
+
+.omc
+
+.DS_Store

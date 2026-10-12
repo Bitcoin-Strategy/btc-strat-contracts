@@ -1,0 +1,57 @@
+{
+  "network": "robinhoodTestnet",
+  "deployment": "robinhoodTestnet",
+  "profile": "sim",
+  "startBlock": 127021497,
+  "mocks": true,
+  "addresses": {
+    "btc": "0x34f23adb5497583969c064efe36d1a773cf04792",
+    "strat": "0x6f72a829c5744d39c070b92294b573af1968414e",
+    "treasury": "0xaaf1a46e22bf4e89002148a60e0b7683917c6301",
+    "vestingVault": "0x2c4f517e63e8b43d3cbdce6530104358efe5ff8e",
+    "vvest": "0xdebc68b0b927142c2aa83fc9bca5a864b29b528d",
+    "bonding": "0x08ba3bb38b99f483ea9e0cb0a28b361486db5338",
+    "staking": "0x68de1d8ae5f8c0442a26a77c4706db03a949ac22",
+    "redemption": "0x0017a28af087ccf05cb6e19d681c91331d7126f4",
+    "premiumSales": "0x92c120fe19bdda92dffa7a72ea16d7f24653c696",
+    "protocolOracle": "0x0ac8a380647b51369adbae6b5915aad8de64f69a",
+    "stratBtcAdapter": "0x72891c918be2618c7482941e6301478ca42bb70d",
+    "swapAdapter": "0x1ef54b49b60d586435d553ceef5174c9c2068c93",
+    "liquidityAdapter": "0x2ad1e9d5404dd197c86aedd09d82449ab736d485",
+    "protocolReader": "0x5fe7f72d4cdfb7fd332d8cffac3a0edb8569b176",
+    "authority": "0x42ceeba055bb8375c1818ca4aec065deaf1c953c",
+    "paramsTimelock": "0x6c6beb2219a43fea29ff2878842c59359e2ad6b5",
+    "upgradeTimelock": "0xc5c7ad48ece7f0a255d82d89298a0f81e6775ae4",
+    "paramsGovernor": "0xe454c241702ace9e9124456d92b4deee4e9bb3a0",
+    "upgradeGovernor": "0x2c25ce86cd1fbe4fefd6495464737ecf7acd42f9",
+    "feeVault": "0x606aaa4db75a7ef200d8f8f2d400eaded4036226",
+    "poolHook": "0x8a3909E6Ab54196e5b8a94629e480bC85E3dB0c4",
+    "poolManager": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+    "swapRouter": "0xbe5420136e621b577ef2a29580dbcc2b54ccd805",
+    "liquidityRouter": "0x44a1907b781054bbb332351e49b75ae075b28e77",
+    "stateView": "0x7fd3616a77f674909ac1f6c18baec66119d99ad0",
+    "stratBtcPoolId": "0x1c3cdcf2d5da45754bf725f0e88ccc2c22ea9b65e8707367cfccee43f54162c9",
+    "usdg": "0x45A3e02a0b62F17922c273C9714d7318d7d01534",
+    "v4Quoter": "0x8Dc178eFB8111BB0973Dd9d722ebeFF267c98F94",
+    "universalRouter": "0x8876789976decbfcbbbe364623c63652db8c0904",
+    "permit2": "0x000000000022D473030F116dDEE9F6B43aC78BA3",
+    "canonicalStateView": "0xf3334192d15450cdd385c8b70e03f9a6bd9e673b"
+  },
+  "implementations": {
+    "PremiumSales": "0x82F367b507f6a0Ef3deeAc8951A1E8a9C7a3E4a6",
+    "Redemption": "0xE726D561A6427ab4d1D4eBE6F9552F78159Bd96F",
+    "VestingVault": "0xe973D39A18c4372921d7824CF714254917dC7ba0",
+    "Bonding": "0xb9a7ca8cD1d48e9c5AdC888d7d8F41fCf510077b",
+    "FeeVault": "0x9B45A6f4eA680D6F8Cb81292A4B2A832DB427897"
+  },
+  "pools": {
+    "btcUsdg": {
+      "id": "0x88d5a54bea70352d49094165a602268c9596ded52a8159079c0d0557a8752282",
+      "currency0": "0x34f23adB5497583969C064efe36D1A773cF04792",
+      "currency1": "0x45A3e02a0b62F17922c273C9714d7318d7d01534",
+      "fee": 500,
+      "tickSpacing": 10,
+      "hooks": "0x0000000000000000000000000000000000000000"
+    }
+  }
+}

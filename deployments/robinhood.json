@@ -1,0 +1,39 @@
+{
+  "network": "robinhood",
+  "deployment": "robinhood",
+  "profile": "prod",
+  "startBlock": 86651208,
+  "mocks": false,
+  "addresses": {
+    "btc": "0xCEC185eB182c47d1bA1EFc84e6959e18cd620Be4",
+    "strat": "0xab63c1817415cc566cddf03c387dcc750af6427f",
+    "treasury": "0x4a6c9f1b41d9c77f14600c85bcb92c984642444a",
+    "vestingVault": "0x5dd0c83420f8f516dbf933567251c4577c8d4b06",
+    "vvest": "0x95066e6947cf26e9b91bc5a0fb1025557f33df64",
+    "bonding": "0x1700c0dc81b5d1e6a8ce83efbf5ab7f9c67f2eee",
+    "staking": "0x9d335c4b63ceda13b587720f8efc494a795b43af",
+    "redemption": "0xb67d5b58b38381d6fdf6e6aadfe16b332419dae3",
+    "premiumSales": "0x11be47a430383f64f389020927963009f688e2b7",
+    "protocolOracle": "0xba50c14fa57b9f6b8e85bb10054c3fe1d60d30d4",
+    "stratBtcAdapter": "0x228811cc56add980e989e71366776ed9df4fa1bc",
+    "swapAdapter": "0x4ae403ce59f219ff27080c2d069f352d88541324",
+    "liquidityAdapter": "0xe9b28744287930d3c03bcd167a984905461f8b88",
+    "protocolReader": "0x5af55d67d0e7ac5720dfe1e514d827cb9ca7079f",
+    "authority": "0x83c939b7f683f48bb6a408f5cd15df212adbe70e",
+    "paramsTimelock": "0x5349f9c5e3083e3b3acd533afdbcb2532fc0a9e0",
+    "upgradeTimelock": "0x141b76dcb8d290b78d7564181ad84b369aa053f9",
+    "paramsGovernor": "0x52e748423dc234754d03f3fee266271d6ecce1ce",
+    "upgradeGovernor": "0xa06ad1b3a80717b51153bd51f882e061fa6ac2de",
+    "feeVault": "0xcc0b98472878ec8b305b5e897cca95f3ccde8306",
+    "poolHook": "0x8b03bed3F9d6848b6d525D5cF34A360c581930c4",
+    "poolManager": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+    "stratBtcPoolId": "0xd1dc21198848c530e5dcfb20d3577b2fa84382e9fcd7a220718cee67d68d0111"
+  },
+  "implementations": {
+    "PremiumSales": "0xe7bB313c751f90e6ff71D1d5863DF28a9834401E",
+    "Redemption": "0xc73129596f08A79042747E70A66C231C2A457C8F",
+    "VestingVault": "0x05F0Cd5E9fcAe2DB3F4D8C3d35c593241bbd1b3A",
+    "Bonding": "0x077f0E08Ea811308f474C999555326cC62Fb55dd",
+    "FeeVault": "0xb28E504c670EE4BD7d3d2070CC8873486F5d9069"
+  }
+}

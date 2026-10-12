@@ -1,0 +1,357 @@
+{
+  "deployment": "robinhoodTestnet",
+  "network": "robinhoodTestnet",
+  "entries": {
+    "0x08Ba3Bb38b99F483EA9E0cB0A28B361486Db5338": {
+      "name": "Bonding",
+      "contract": "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol:ERC1967Proxy",
+      "args": [
+        "0xb9a7ca8cD1d48e9c5AdC888d7d8F41fCf510077b",
+        "0x1459457a000000000000000000000000dc2192d97424fa047e798d27346bcdafca4e1a4c00000000000000000000000034f23adb5497583969c064efe36d1a773cf047920000000000000000000000006f72a829c5744d39c070b92294b573af1968414e000000000000000000000000aaf1a46e22bf4e89002148a60e0b7683917c63010000000000000000000000002c4f517e63e8b43d3cbdce6530104358efe5ff8e"
+      ],
+      "verify": true
+    },
+    "0xb9a7ca8cD1d48e9c5AdC888d7d8F41fCf510077b": {
+      "name": "BondingImplementation",
+      "contract": "contracts/core/Bonding.sol:Bonding",
+      "args": [],
+      "verify": true
+    },
+    "0x34f23adB5497583969C064efe36D1A773cF04792": {
+      "name": "BTC",
+      "contract": "contracts/mocks/MockERC20Decimals.sol:MockERC20Decimals",
+      "args": [
+        "Mock cbBTC",
+        "mcbBTC",
+        8
+      ],
+      "verify": true
+    },
+    "0x606aAa4Db75A7eF200D8f8f2d400eaded4036226": {
+      "name": "FeeVault",
+      "contract": "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol:ERC1967Proxy",
+      "args": [
+        "0x9B45A6f4eA680D6F8Cb81292A4B2A832DB427897",
+        "0x35876476000000000000000000000000dc2192d97424fa047e798d27346bcdafca4e1a4c0000000000000000000000008366a39cc670b4001a1121b8f6a443a643e40951000000000000000000000000aaf1a46e22bf4e89002148a60e0b7683917c63010000000000000000000000006f72a829c5744d39c070b92294b573af1968414e00000000000000000000000034f23adb5497583969c064efe36d1a773cf047920000000000000000000000000ac8a380647b51369adbae6b5915aad8de64f69a0000000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "verify": true
+    },
+    "0x9B45A6f4eA680D6F8Cb81292A4B2A832DB427897": {
+      "name": "FeeVaultImplementation",
+      "contract": "contracts/core/FeeVault.sol:FeeVault",
+      "args": [],
+      "verify": true
+    },
+    "0xE454c241702ace9E9124456D92b4deeE4E9Bb3a0": {
+      "name": "ParamsGovernor",
+      "contract": "contracts/governance/StratGovernor.sol:StratGovernor",
+      "args": [
+        "STRAT Governor",
+        "0x6f72a829c5744d39c070b92294b573af1968414e",
+        "0x6c6beb2219a43fea29ff2878842c59359e2ad6b5",
+        "0x42ceeba055bb8375c1818ca4aec065deaf1c953c",
+        30,
+        120,
+        "100000000000000000000",
+        "1000000000000000000000",
+        "5001"
+      ],
+      "verify": true
+    },
+    "0x6c6bEb2219A43FEA29Ff2878842C59359E2AD6B5": {
+      "name": "ParamsTimelock",
+      "contract": "@openzeppelin/contracts/governance/TimelockController.sol:TimelockController",
+      "args": [
+        "60",
+        [],
+        [],
+        "0xdc2192d97424fa047e798d27346bcdafca4e1a4c"
+      ],
+      "verify": true
+    },
+    "0x8366a39CC670B4001A1121B8F6A443A643e40951": {
+      "name": "PoolManager",
+      "contract": "PoolManager",
+      "args": [],
+      "verify": false
+    },
+    "0x44A1907B781054BBB332351E49B75ae075B28e77": {
+      "name": "PoolModifyLiquidityTest",
+      "contract": "PoolModifyLiquidityTest",
+      "args": [],
+      "verify": false,
+      "note": "Uniswap foundry artifact"
+    },
+    "0xBE5420136e621B577Ef2A29580DbCc2b54CcD805": {
+      "name": "PoolSwapTest",
+      "contract": "PoolSwapTest",
+      "args": [],
+      "verify": false,
+      "note": "Uniswap foundry artifact"
+    },
+    "0x92c120fe19bDda92DFFA7a72ea16D7f24653c696": {
+      "name": "PremiumSales",
+      "contract": "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol:ERC1967Proxy",
+      "args": [
+        "0x82F367b507f6a0Ef3deeAc8951A1E8a9C7a3E4a6",
+        "0xcc2a9a5b000000000000000000000000dc2192d97424fa047e798d27346bcdafca4e1a4c0000000000000000000000001ef54b49b60d586435d553ceef5174c9c2068c93000000000000000000000000aaf1a46e22bf4e89002148a60e0b7683917c63010000000000000000000000006f72a829c5744d39c070b92294b573af1968414e00000000000000000000000034f23adb5497583969c064efe36d1a773cf047920000000000000000000000000ac8a380647b51369adbae6b5915aad8de64f69a"
+      ],
+      "verify": true
+    },
+    "0x82F367b507f6a0Ef3deeAc8951A1E8a9C7a3E4a6": {
+      "name": "PremiumSalesImplementation",
+      "contract": "contracts/core/PremiumSales.sol:PremiumSales",
+      "args": [],
+      "verify": true
+    },
+    "0x42ceEBA055BB8375C1818Ca4aeC065DEaF1C953c": {
+      "name": "ProtocolAuthority",
+      "contract": "contracts/governance/ProtocolAuthority.sol:ProtocolAuthority",
+      "args": [
+        "0xdc2192d97424fa047e798d27346bcdafca4e1a4c",
+        "0x6c6beb2219a43fea29ff2878842c59359e2ad6b5",
+        "0xc5c7ad48ece7f0a255d82d89298a0f81e6775ae4",
+        "0xa8c22607722C1d3f28CCF7E1d2f2238D0757A7Ea",
+        "1790852542"
+      ],
+      "verify": true
+    },
+    "0x0AC8A380647b51369aDBaE6B5915AaD8De64f69A": {
+      "name": "ProtocolOracle",
+      "contract": "contracts/adapters/ProtocolOracle.sol:ProtocolOracle",
+      "args": [
+        "0xdc2192d97424fa047e798d27346bcdafca4e1a4c"
+      ],
+      "verify": true
+    },
+    "0x5FE7f72d4CDfB7fd332d8CFfAc3A0edb8569B176": {
+      "name": "ProtocolReader",
+      "contract": "contracts/periphery/ProtocolReader.sol:ProtocolReader",
+      "args": [
+        "0xaaf1a46e22bf4e89002148a60e0b7683917c6301",
+        "0x2c4f517e63e8b43d3cbdce6530104358efe5ff8e",
+        "0x68de1d8ae5f8c0442a26a77c4706db03a949ac22",
+        "0x0017a28af087ccf05cb6e19d681c91331d7126f4",
+        "0x6f72a829c5744d39c070b92294b573af1968414e",
+        "0xdebc68b0b927142c2aa83fc9bca5a864b29b528d",
+        "0x34f23adb5497583969c064efe36d1a773cf04792",
+        "0x08ba3bb38b99f483ea9e0cb0a28b361486db5338",
+        "0x92c120fe19bdda92dffa7a72ea16d7f24653c696",
+        "0x606aaa4db75a7ef200d8f8f2d400eaded4036226",
+        "0x42ceeba055bb8375c1818ca4aec065deaf1c953c"
+      ],
+      "verify": true
+    },
+    "0x0017A28Af087cCF05cB6E19D681c91331d7126F4": {
+      "name": "Redemption",
+      "contract": "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol:ERC1967Proxy",
+      "args": [
+        "0xE726D561A6427ab4d1D4eBE6F9552F78159Bd96F",
+        "0xa6b63eb8000000000000000000000000dc2192d97424fa047e798d27346bcdafca4e1a4c000000000000000000000000aaf1a46e22bf4e89002148a60e0b7683917c630100000000000000000000000068de1d8ae5f8c0442a26a77c4706db03a949ac2200000000000000000000000000000000000000000000000000000000000151800000000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "verify": true
+    },
+    "0xE726D561A6427ab4d1D4eBE6F9552F78159Bd96F": {
+      "name": "RedemptionImplementation",
+      "contract": "contracts/core/Redemption.sol:Redemption",
+      "args": [],
+      "verify": true
+    },
+    "0x68DE1D8ae5f8c0442a26a77C4706Db03A949Ac22": {
+      "name": "Staking",
+      "contract": "contracts/core/Staking.sol:Staking",
+      "args": [
+        "0xdc2192d97424fa047e798d27346bcdafca4e1a4c",
+        "0x6f72a829c5744d39c070b92294b573af1968414e",
+        "0x92c120fe19bdda92dffa7a72ea16d7f24653c696",
+        "200000000000000000",
+        "950000000000000000",
+        "3600",
+        "120"
+      ],
+      "verify": true
+    },
+    "0x7fD3616A77F674909Ac1f6C18BAeC66119d99ad0": {
+      "name": "StateView",
+      "contract": "StateView",
+      "args": [],
+      "verify": false,
+      "note": "Uniswap foundry artifact"
+    },
+    "0x6F72A829C5744D39C070B92294B573af1968414e": {
+      "name": "STRAT",
+      "contract": "contracts/tokens/STRAT.sol:STRAT",
+      "args": [
+        "0xdc2192d97424fa047e798d27346bcdafca4e1a4c",
+        "50000000000000000000000000"
+      ],
+      "verify": true
+    },
+    "0x8a3909E6Ab54196e5b8a94629e480bC85E3dB0c4": {
+      "name": "StratPoolHook",
+      "contract": "contracts/hooks/StratPoolHook.sol:StratPoolHook",
+      "args": [
+        "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+        "0xdc2192d97424fa047e798d27346bcdafca4e1a4c",
+        100,
+        "0x606aaa4db75a7ef200d8f8f2d400eaded4036226",
+        500
+      ],
+      "verify": true
+    },
+    "0xAaf1A46e22bf4e89002148a60E0B7683917c6301": {
+      "name": "Treasury",
+      "contract": "contracts/core/Treasury.sol:Treasury",
+      "args": [
+        "0xdc2192d97424fa047e798d27346bcdafca4e1a4c",
+        "0x42ceeba055bb8375c1818ca4aec065deaf1c953c",
+        "0x34f23adb5497583969c064efe36d1a773cf04792",
+        "0x6f72a829c5744d39c070b92294b573af1968414e",
+        604800,
+        5,
+        1000,
+        900,
+        2
+      ],
+      "verify": true
+    },
+    "0x2Ad1E9d5404dD197c86AeDD09D82449AB736d485": {
+      "name": "UniV4LiquidityAdapter",
+      "contract": "contracts/adapters/UniV4LiquidityAdapter.sol:UniV4LiquidityAdapter",
+      "args": [
+        "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+        {
+          "currency0": "0x34f23adb5497583969c064efe36d1a773cf04792",
+          "currency1": "0x6f72a829c5744d39c070b92294b573af1968414e",
+          "fee": 3000,
+          "tickSpacing": 60,
+          "hooks": "0x8a3909E6Ab54196e5b8a94629e480bC85E3dB0c4"
+        },
+        "0x08ba3bb38b99f483ea9e0cb0a28b361486db5338"
+      ],
+      "verify": true
+    },
+    "0x1Ef54b49B60d586435d553CEef5174c9c2068C93": {
+      "name": "UniV4SwapAdapter",
+      "contract": "contracts/adapters/UniV4SwapAdapter.sol:UniV4SwapAdapter",
+      "args": [
+        "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+        [
+          "0x34f23adb5497583969c064efe36d1a773cf04792",
+          "0x6f72a829c5744d39c070b92294b573af1968414e"
+        ],
+        [
+          "0x6f72a829c5744d39c070b92294b573af1968414e",
+          "0x34f23adb5497583969c064efe36d1a773cf04792"
+        ],
+        [
+          [
+            {
+              "key": {
+                "currency0": "0x34f23adb5497583969c064efe36d1a773cf04792",
+                "currency1": "0x6f72a829c5744d39c070b92294b573af1968414e",
+                "fee": 3000,
+                "tickSpacing": 60,
+                "hooks": "0x8a3909E6Ab54196e5b8a94629e480bC85E3dB0c4"
+              },
+              "zeroForOne": true
+            }
+          ],
+          [
+            {
+              "key": {
+                "currency0": "0x34f23adb5497583969c064efe36d1a773cf04792",
+                "currency1": "0x6f72a829c5744d39c070b92294b573af1968414e",
+                "fee": 3000,
+                "tickSpacing": 60,
+                "hooks": "0x8a3909E6Ab54196e5b8a94629e480bC85E3dB0c4"
+              },
+              "zeroForOne": false
+            }
+          ]
+        ]
+      ],
+      "verify": true
+    },
+    "0x72891C918bE2618C7482941E6301478ca42BB70d": {
+      "name": "UniV4TwapAdapter",
+      "contract": "contracts/adapters/UniV4TwapAdapter.sol:UniV4TwapAdapter",
+      "args": [
+        "0x8a3909E6Ab54196e5b8a94629e480bC85E3dB0c4",
+        {
+          "currency0": "0x34f23adb5497583969c064efe36d1a773cf04792",
+          "currency1": "0x6f72a829c5744d39c070b92294b573af1968414e",
+          "fee": 3000,
+          "tickSpacing": 60,
+          "hooks": "0x8a3909E6Ab54196e5b8a94629e480bC85E3dB0c4"
+        },
+        "0x6f72a829c5744d39c070b92294b573af1968414e",
+        "0x34f23adb5497583969c064efe36d1a773cf04792",
+        1800,
+        true
+      ],
+      "verify": true
+    },
+    "0x2C25CE86Cd1FBE4feFD6495464737Ecf7acd42F9": {
+      "name": "UpgradeGovernor",
+      "contract": "contracts/governance/StratGovernor.sol:StratGovernor",
+      "args": [
+        "STRAT Upgrade Governor",
+        "0x6f72a829c5744d39c070b92294b573af1968414e",
+        "0xc5c7ad48ece7f0a255d82d89298a0f81e6775ae4",
+        "0x42ceeba055bb8375c1818ca4aec065deaf1c953c",
+        30,
+        180,
+        "200000000000000000000",
+        "2000000000000000000000",
+        "6667"
+      ],
+      "verify": true
+    },
+    "0xc5c7Ad48ECe7F0a255d82d89298a0F81E6775Ae4": {
+      "name": "UpgradeTimelock",
+      "contract": "@openzeppelin/contracts/governance/TimelockController.sol:TimelockController",
+      "args": [
+        "120",
+        [],
+        [],
+        "0xdc2192d97424fa047e798d27346bcdafca4e1a4c"
+      ],
+      "verify": true
+    },
+    "0x2c4f517e63E8B43D3cBDce6530104358eFE5ff8e": {
+      "name": "VestingVault",
+      "contract": "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol:ERC1967Proxy",
+      "args": [
+        "0xe973D39A18c4372921d7824CF714254917dC7ba0",
+        "0xc0c53b8b000000000000000000000000dc2192d97424fa047e798d27346bcdafca4e1a4c0000000000000000000000006f72a829c5744d39c070b92294b573af1968414e000000000000000000000000aaf1a46e22bf4e89002148a60e0b7683917c6301"
+      ],
+      "verify": true
+    },
+    "0xe973D39A18c4372921d7824CF714254917dC7ba0": {
+      "name": "VestingVaultImplementation",
+      "contract": "contracts/core/VestingVault.sol:VestingVault",
+      "args": [],
+      "verify": true
+    },
+    "0xdeBc68b0b927142c2Aa83fc9BcA5a864b29b528D": {
+      "name": "VVEST",
+      "contract": "contracts/tokens/VVEST.sol:VVEST",
+      "args": [
+        "0x08ba3bb38b99f483ea9e0cb0a28b361486db5338",
+        "0x2c4f517e63e8b43d3cbdce6530104358efe5ff8e"
+      ],
+      "verify": true
+    },
+    "0x45A3e02a0b62F17922c273C9714d7318d7d01534": {
+      "name": "USDG",
+      "contract": "contracts/mocks/MockERC20Decimals.sol:MockERC20Decimals",
+      "args": [
+        "Mock Global Dollar",
+        "mUSDG",
+        6
+      ],
+      "verify": true
+    }
+  }
+}

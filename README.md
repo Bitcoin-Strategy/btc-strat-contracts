@@ -62,4 +62,4 @@ Deployment is configured through `.env` (see `.env.example`) and the profiles in
 
 ## License
 
-MIT
+[MIT](LICENSE)

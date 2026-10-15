@@ -14,6 +14,19 @@ Smart contracts of the BTC Strategy protocol: a bitcoin-backed treasury token (S
 
 `ProtocolAuthority` owns every contract. During Genesis the admin configures the protocol; `finalizeGenesis()` hands control to two governor and timelock tracks, one for parameters and one, with a higher bar, for upgrades.
 
+## Genesis launch
+
+STRAT is launched through a Uniswap Continuous Clearing Auction on Robinhood Chain: 5,000,000 STRAT for USDG, bidding from block `88755424` to `98755424` (October 15–26, 2026). Auction: [`0xad292203655E70b218ef92E86D8C197D1D0bFB60`](https://app.uniswap.org/explore/auctions/robinhood/0xad292203655e70b218ef92e86d8c197d1d0bfb60). If the raise stays below the graduation threshold of 167,235 USDG, the auction fails and bidders reclaim their USDG.
+
+After graduation the raise is allocated as follows:
+
+1. 40,000 USDG reimburses development costs.
+2. The remainder is swapped to cbBTC.
+3. Most of the cbBTC, paired with 499,000 STRAT, seeds the STRAT/cbBTC pool with `StratPoolHook`, the protocol's primary market.
+4. The rest of the cbBTC is deposited into the Treasury as the initial backing of STRAT.
+
+The Uniswap launcher also opens a STRAT/USDG pool with 1,000 STRAT; it is not the primary market. The raise and the liquidity positions are received by the deployer `0xDC2192D97424FA047E798d27346BCdAfca4E1A4C`, and every step above is a public transaction on Robinhood Chain.
+
 ## Deployments
 
 Robinhood Chain (4663), start block `86651208`. Full address book: [`deployments/robinhood.json`](deployments/robinhood.json).
